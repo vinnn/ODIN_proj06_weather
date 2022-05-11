@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather page</title>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    
+
+
+    <div id="container">
+
+        <div>!! VERY BASIC WEATHER PAGE !!</div>
+
+
+        <div class="search-field">
+            <div class="label">Search weather in : </div>     
+            <input id="input-city" placeholder="city">
+            <button id="btn-city">Search</button>
+        </div>
+
+
+        <div class="field">
+            <div class="label">City : </div>
+            <div class="val" id="city"></div>
+            <div class="unit"></div>
+        </div>
+
+        <div class="field">
+            <div class="label">Country : </div>
+            <div class="val" id="country"></div>
+            <div class="unit"></div>
+        </div>
+
+        <div class="field">
+            <div class="label">Weather : </div>
+            <div class="val" id="description"></div>
+            <div class="unit"></div>
+        </div>
+
+        <div class="field">
+            <div class="label">Minimum temperature : </div>
+            <div class="val" id="temp-min"></div>
+            <button class="btn-temp" id="btn-temp-min">degK</button>
+        </div>
+
+        <div class="field">
+            <div class="label">Maximum temperature : </div>
+            <div class="val" id="temp-max"></div>
+            <button class="btn-temp" id="btn-temp-max">degK</button>
+        </div>
+
+        <div class="field">
+            <div class="label">Wind speed : </div>
+            <div class="val" id="wind-speed"></div>
+            <div class="unit">m/s</div>
+        </div>
+
+    </div>
+
+
+  
+      
+
+
+    <script src='script.js'></script>
+
+</body>
+</html>

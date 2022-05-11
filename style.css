@@ -1,0 +1,43 @@
+* {
+    /* border: 1px solid blue; */
+}
+
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    margin-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.field {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 3fr 1fr;
+    /* grid-template-areas: "lab val uni"; */
+
+}
+
+.search-field {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.label, .val {
+    min-width: 10rem;
+}
+
+#input-city {
+    width: 14rem;
+    min-width: 5rem;
+}
