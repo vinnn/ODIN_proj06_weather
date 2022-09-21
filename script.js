@@ -1,6 +1,4 @@
-
 // https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=d7d4d161de0b5a156ff892309052a01d
-
 
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,13 +33,11 @@ async function retrieveWeatherData(locCity="London") {
 }
 
 
-
 function initialRender() {
     retrieveWeatherData("London");
     listenSearchCity();
     listenChangeTempUnit();
 }
-
 
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -95,9 +91,6 @@ function listenChangeTempUnit() {
                 temp_min = Number(temp_min) - 273.15;
                 temp_max = Number(temp_max) - 273.15;
 
-                // temp_min = (temp_min - 32) * 5 / 9;
-                // temp_max = (temp_max - 32) * 5 / 9;
-
                 div_temp_min.innerText = temp_min;
                 div_temp_max.innerText = temp_max;
                 btn_temp_min.innerText = "degC";
@@ -107,9 +100,6 @@ function listenChangeTempUnit() {
                 temp_min = Number(temp_min) + 273.15;
                 temp_max = Number(temp_max) + 273.15;
 
-                // temp_min = (9 * temp_min / 5) + 32;
-                // temp_max = (9 * temp_max / 5) + 32;
-
                 div_temp_min.innerText = temp_min;
                 div_temp_max.innerText = temp_max;
                 btn_temp_min.innerText = "degK";
@@ -117,7 +107,6 @@ function listenChangeTempUnit() {
             }
     })
 }
-
 
 
 initialRender();
