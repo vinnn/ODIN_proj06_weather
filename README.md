@@ -1,4 +1,4 @@
-## (VERY BASIC) WEATHER APP
+## ODIN_weather (VERY BASIC) WEATHER APP
 
 ## Motivation
 This project is to practice the concepts learned in the Odin Project - Full Stack Javascript - Javascript lessons.
